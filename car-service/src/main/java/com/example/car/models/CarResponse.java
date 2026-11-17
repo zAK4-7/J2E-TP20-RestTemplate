@@ -1,0 +1,27 @@
+package com.example.car.models;
+
+import com.example.car.entities.Client;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+/**
+ * Response payload combining a car and its owner (fetched from SERVICE-CLIENT).
+ */
+@Data
+@Builder
+@NoArgsConstructor
+@AllArgsConstructor
+public class CarResponse {
+
+    private Long id;
+
+    private String brand;
+
+    private String model;
+
+    private String matricule;
+
+    private Client client;
+}
